@@ -1,5 +1,5 @@
 // create variables for each item on the page you want to work with
-// using UNIQUE ID atrributes from your HTML file
+// using UNIQUE ID attributes from your HTML file
 
 pic1 = document.querySelector("#small-frame-pic");
 text1 = document.querySelector("#small-frame-text");
