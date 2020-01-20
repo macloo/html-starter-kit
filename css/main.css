@@ -1,0 +1,61 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* above best practice:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+body {
+    font-family: 'Tahoma', sans-serif;
+    color: #333;
+    background: #fff9ef;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Palatino', 'Georgia', serif;
+}
+p {
+    line-height: 1.4;
+}
+/* styles for the two selectors below, div and img, provide an easy
+   way to make a simple page responsive for both large and small screens
+   - use of max-width
+   - margin: auto to center the block with equal left and right margins
+   - minimal padding
+   for img, max-width: 100% prevents image from being wider than screen
+   */
+div {
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* styles for special divs in javascript_example.html
+   note that width and height indicate the exact width and height
+   of the image to be replaced by each div 
+   */
+#small-frame-text {
+    width: 512px;
+    height: 384px;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #cc1d0a; /* red */
+}
+#man-on-vespa-text {
+    width: 512px;
+    height: 606px;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #386793; /* blue */
+}
